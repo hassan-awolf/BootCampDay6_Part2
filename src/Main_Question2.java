@@ -19,6 +19,11 @@ public class Main_Question2 {
 
     }
 
+    /* Accepts parameter int array nums and int k
+       Rotates nums to the left by k
+       If k is negative, rotates nums to the right by absolute value of k
+       Handles all integer values of k
+     */
     public static int[] rotateNums (int[] nums, int k)
     {
 

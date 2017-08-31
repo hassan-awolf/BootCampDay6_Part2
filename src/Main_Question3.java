@@ -14,6 +14,12 @@ public class Main_Question3 {
         System.out.println(Arrays.toString(mergeSortedLists(a,b)));
     }
 
+    /* Accepts two int arrays as parameters
+       Both parameters must be sorted before method call
+       Merges both arrays into one sorted array
+       Handles arrays of different lengths (a can have a length of 6, while b has a length of 4)
+       Handles arrays of 0 length
+    */
     public static int[] mergeSortedLists(int[] a, int[] b)
     {
         int[] new_list = new int[a.length+b.length];

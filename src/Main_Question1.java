@@ -21,6 +21,9 @@ public class Main_Question1 {
         System.out.println("Sum of list from recursion: " + getSumRecursion(list) );
     }
 
+    /* Returns sum of values in parameter list
+       Will handle negative numbers appropriately ( 5 + -4 = 1)
+    */
     public static int getSumForLoop(List<Integer> list)
     {
         int sum = 0;
@@ -31,6 +34,9 @@ public class Main_Question1 {
         return sum;
     }
 
+    /* Returns sum of values in parameter list
+       Will handle negative numbers appropriately ( 5 + -4 = 1)
+    */
     public static int getSumWhileLoop(List<Integer> list)
     {
         List<Integer> temp = new ArrayList<Integer>(list);
@@ -44,6 +50,9 @@ public class Main_Question1 {
         return sum;
     }
 
+    /* Returns sum of values in parameter list
+       Will handle negative numbers appropriately ( 5 + -4 = 1)
+    */
     public static int getSumRecursion(List<Integer> list)
     {
         if (list.size() > 1)

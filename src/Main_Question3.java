@@ -1,4 +1,8 @@
+import org.junit.Test;
+
 import java.util.Arrays;
+
+import static org.junit.Assert.assertEquals;
 
 public class Main_Question3 {
 
@@ -52,5 +56,21 @@ public class Main_Question3 {
         return new_list;
 
     }
+
+    @Test
+    public void testMergeSortedLists()
+    {
+        assertEquals(Arrays.toString(new int[]{1,2,3,4,5,6}),
+                Arrays.toString(mergeSortedLists(new int[]{1,4,6}, new int[]{2,3,5})));
+        assertEquals(Arrays.toString(new int[]{1,2,3,4,5,6,7,8,9}),
+                Arrays.toString(mergeSortedLists(new int[]{1,4,6}, new int[]{2,3,5,7,8,9})));
+        assertEquals(Arrays.toString(new int[]{-2,-1,0,1,2,3,4,5,6}),
+                Arrays.toString(mergeSortedLists(new int[]{-2,-1,1,4,6}, new int[]{0,2,3,5})));
+        assertEquals(Arrays.toString(new int[]{0,2,3,5}),
+                Arrays.toString(mergeSortedLists(new int[]{}, new int[]{0,2,3,5})));
+        assertEquals(Arrays.toString(new int[]{}),
+                Arrays.toString(mergeSortedLists(new int[]{}, new int[]{})));
+    }
+
 
 }
